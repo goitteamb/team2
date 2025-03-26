@@ -26,9 +26,10 @@
     <title>goit-teamb</title>
 </head>
 <body>
-    <load src="./partials/header-section.html" />
+    <load src="./partials/header.html" />
 
     <main>
+        <load src="./partials/main-section.html" />
         <load src="./partials/section1.html" />
         <load src="./partials/section2.html" />
         <load src="./partials/section3.html" />
@@ -36,5 +37,21 @@
     </main>
 
     <load src="./partials/footer.html" />
+
+    <script>
+        function showSideBar(){
+            const sidebar = document.querySelector(".sidebar")
+
+            sidebar.style.display = "flex"
+
+        }
+    </script>
+    <script>
+        function hideSideBar(){
+            const sidebar = document.querySelector(".sidebar")
+
+            sidebar.style.display = "none"
+        }
+    </script>
 </body>
 </html>

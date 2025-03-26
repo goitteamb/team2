@@ -4,24 +4,38 @@
     --brown: #bea69e;
     --white: #ffffff;
 }
-
-
-
-
 button {
     cursor: pointer;
 }
-
-
-
-
 a {
     text-decoration: none;
-    color: inherit;
 }
-
+.header-section{
+    padding: 10px 0px;
+}
 body {
     background-color: var(--black);
+}
+.header-container{
+    max-width: 320px;
+    display: flex;
+    align-items: center;
+}
+.burger-button{
+    display: block;
+}
+.header-sign-up-button{
+    display: none;
+    background-color: white;
+    padding: 15px 30px;
+    margin-left: 10px;
+    border-radius: 8px;
+    text-align: left;
+    font-weight: 500;
+    font-size: 18px;
+    color: black;
+    width: 230px;
+    text-align: center;
 }
 
 .header-hero {
@@ -30,15 +44,17 @@ body {
     color: white;
     padding-top: 20px;
 }
-
-.header-container {
-    position: relative;
+.nav-ul{
+    display: flex;
+    list-style: none;
+    gap: 25px;
 }
-
-.nav-ul,
-.header-sign-up-button {
-    display: none;
-color: white;
+.nav-ul .nav-li{
+    font-size: 14px;
+}
+.nav-ul li a{
+    color: white;
+    
 }
 
 .header-nav {
@@ -49,14 +65,8 @@ color: white;
     border-radius: 12px;
     border: 1px solid rgba(255, 255, 255, 0.2);
     background-color: var(--black);
-}
-
-.nav-logo-icon {
-    width: 127px;
-    height: 20px;
-    display: block;
-    padding: 0;
-    margin: 0;
+    padding: 20px;
+    width: 100%;
 }
 
 .nav-cam-icon:hover {
@@ -68,10 +78,8 @@ color: white;
     align-items: center;
     gap: 14px;
 }
-
-.header-section {
-    width: 335px;
-    margin: auto;
+.nav-burger-div{
+    display: none;
 }
 
 /* hamburger menu */
@@ -124,7 +132,49 @@ body:has(.hamburger-checkbox:checked) .menu-wrap {
     align-items: end;
     margin-top: 133px;
 }
-
+.cam-button{
+    display: block;
+}
+.sidebar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 65%;
+    height: 1024px;
+    z-index: 999;
+    background-color: rgb(190,166,158);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    list-style: none;
+    gap: 30px;
+}
+.sidebar li{
+    font-size: 14px;
+    
+}
+.sidebar li a{
+    color: black;
+    margin-left: 30px;
+}
+.hideOnMobile{
+    display: none;
+}
+.mobil-close{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+.burger-button{
+    display: block;
+}
+.cam-icon{
+    display: block;
+}
+.sidebar .menu-camera-div-image{
+    width: 100%;
+}
 /* Header Bitimi */
 
 /* Hero */
@@ -251,10 +301,45 @@ body:has(.hamburger-checkbox:checked) .menu-wrap {
 .hero-photographer {
     margin-left: 15px;
 }
+.nav-cam-icon{
+    display: block;
+}
 
 /* Tablet */
-@media screen and (min-width: 768px) and (max-width: 1279px) {
-    .hero-section {
-            width: 1080px;
-        }
+@media screen and (min-width: 768px){
+    .header-sign-up-button{
+        display: inline-block;
     }
+    .nav-ul .header-sign-up-button{
+        display: block;
+    }
+    .header-container{
+        max-width: 768px;
+    }
+    
+
+    .hero-container {
+        max-width: 768px;
+    }
+    
+    .nav-cam-icon{
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1158px) {
+    .hideOnMobile{
+        display: block;
+    }
+    .burger-button{
+        display: none;
+    }
+    
+    .header-container{
+        max-width: 1240px;
+    }
+    .hero-container {
+        max-width: 1240px;
+    }
+}
