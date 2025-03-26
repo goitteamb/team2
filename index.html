@@ -18,139 +18,161 @@
     
 
     <title>goit-teamb</title>
-  <link rel="stylesheet" crossorigin href="/team2/assets/index-DwlEm_dK.css">
+  <link rel="stylesheet" crossorigin href="/team2/assets/index-BgO3TSox.css">
 </head>
 <body>
     <header class="header-section">
-    <div class="header-container">
-        <nav class="header-nav">
-            <div class="nav-logo-div">
-                <svg class="nav-logo-icon">
-                    <use href=".src/images/icons.svg#icon-logo"></use>
-                </svg>
-            </div>
+  <div class="container header-container">
+    <nav class="header-nav">
+      <a href="#">
+        <svg class="nav-logo-icon" width="123" height="16">
+          <use href="/team2/assets/icons-CU23zrBB.svg#icon-logo"></use>
+        </svg>
+      </a>
 
-                <ul class="nav-ul">
-                    <li class="nav-li">
-                        <a class="nav-li-a" href="#about-us">ABOUT US</a>
-                    </li>
-                    <li class="nav-li">
-                        <a class="nav-li-a" href="#our-courses">OUR COURSES</a>
-                    </li>
-                    <li class="nav-li">
-                        <a class="nav-li-a" href="#our-mentors">OUR MENTORS</a>
-                    </li>
-                    <li class="nav-li">
-                        <a class="nav-li-a" href="#reviews">REVIEWS</a>
-                    </li>
-                    <li class="nav-li">
-                        <a class="nav-li-a" href="#contacts">CONTACTS</a>
-                    </li>
-                </ul>
+      <ul class="sidebar">
+        <li class="mobil-close" onclick="hideSideBar()">
+          <img
+            class="menu-wrap-img"
+            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEISURBVHgB7ZbBDYMwDEVdOMEJwUIZhU0aNmCkdgNW6AJwhAuithSkVkqC7fTWPClqCTH/EZEAQCaTidB1XU8NlCTVU2HbtodrdxBCNWd9TKIIndj3/fPQSiTcWBu41hdl6MS2bVNVVTf8a1yXwWNY1/UJgnBkWJZlBKkAgWEPiYQvfJ5nG4mIC0gkNOEsAY6ENpwtEJPAZrThxA2E4N1a/AmtCFE4wZ6BE89MqMOJAnQczL5LxDPgeeBOWPtEkoDvacdGgUYrwRYILTXpZqUSuFrnKRKXAtxNRitR/iI8RSIo4N7hIzc8JlHX9Qv7J9947veAaJNxY4fAtfg0TdNTAyWp9ZnMf/AGkty7+MtRZ7kAAAAASUVORK5CYII="
+            alt="menu-wrap-close-img"
+            width="32"
+            height="32"
+          />
+        </li>
+        <li>
+          <a href="#about-us">ABOUT US</a>
+        </li>
+        <li>
+          <a href="#our-courses">OUR COURSES</a>
+        </li>
+        <li>
+          <a href="#our-mentors">OUR MENTORS</a>
+        </li>
+        <li>
+          <a href="#reviews">REVIEWS</a>
+        </li>
+        <li>
+          <a href="#contacts">CONTACTS</a>
+        </li>
+        <li>
+          <img
+            class="menu-camera-div-image"
+            srcset="/team2/assets/menu-camera@x2-CZsBW2Do.png"
+            src="/team2/assets/menu-camera-0qjW01Pa.png"
+            alt="menu_camera"
+            width="476"
+            height="480"
+          />
+        </li>
+      </ul>
 
-                <div class="nav-icons-div">
-                    <div class="nav-cam-div">
-                        <a href="#sign-up">
-                            <svg class="nav-cam-icon" width="16" height="16">
-                                <use href="/team2/assets/icons-CU23zrBB.svg#icon-camera"></use>
-                            </svg>
-                        </a>
-                    </div>
+      <ul class="nav-ul">
+        <li class="nav-li hideOnMobile">
+          <a class="nav-li-a" href="#about-us">ABOUT US</a>
+        </li>
+        <li class="nav-li hideOnMobile">
+          <a class="nav-li-a" href="#our-courses">OUR COURSES</a>
+        </li>
+        <li class="nav-li hideOnMobile">
+          <a class="nav-li-a" href="#our-mentors">OUR MENTORS</a>
+        </li>
+        <li class="nav-li hideOnMobile">
+          <a class="nav-li-a" href="#reviews">REVIEWS</a>
+        </li>
+        <li class="nav-li hideOnMobile">
+          <a class="nav-li-a" href="#contacts">CONTACTS</a>
+        </li>
+        <li class="nav-li">
+          <a href="#sign-up">
+            <svg class="nav-cam-icon" width="16" height="16">
+              <use href="/team2/assets/icons-CU23zrBB.svg#icon-camera"></use>
+            </svg>
+          </a>
+        </li>
+        <li onclick="showSideBar()" class="nav-li burger-button">
+          <svg class="nav-burger-icon" width="32" height="22">
+            <use href="/team2/assets/icons-CU23zrBB.svg#icon-nav-burger"></use>
+          </svg>
+        </li>
+      </ul>
+    </nav>
 
-                    <div class="nav-burger-div">
-                        <label for="hamburger-checkbox" class="label2">
-                            <svg class="nav-burger-icon" width="32" height="22">
-                                <use href="/team2/assets/icons-CU23zrBB.svg#icon-nav-burger"></use>
-                            </svg>
-                        </label>
-                    </div>
-                </div>
-            </nav>
-                <div class="header-signup-button-div">
-                    <a href="#sign-up" class="header-sign-up-button">SIGN UP</a>
-                </div>
+    <a href="#sign-up" class="header-sign-up-button">SIGN UP</a>
 
-                <div class="menu-wrap">
-                    <input type="checkbox" class="hamburger-checkbox" id="hamburger-checkbox" />
-                    <label for="hamburger-checkbox" class="label1">
-                        <img class="menu-wrap-img" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAEISURBVHgB7ZbBDYMwDEVdOMEJwUIZhU0aNmCkdgNW6AJwhAuithSkVkqC7fTWPClqCTH/EZEAQCaTidB1XU8NlCTVU2HbtodrdxBCNWd9TKIIndj3/fPQSiTcWBu41hdl6MS2bVNVVTf8a1yXwWNY1/UJgnBkWJZlBKkAgWEPiYQvfJ5nG4mIC0gkNOEsAY6ENpwtEJPAZrThxA2E4N1a/AmtCFE4wZ6BE89MqMOJAnQczL5LxDPgeeBOWPtEkoDvacdGgUYrwRYILTXpZqUSuFrnKRKXAtxNRitR/iI8RSIo4N7hIzc8JlHX9Qv7J9947veAaJNxY4fAtfg0TdNTAyWp9ZnMf/AGkty7+MtRZ7kAAAAASUVORK5CYII=" alt="menu-wrap-close-img" width="32"
-                            height="32" />
-                    </label>
-                    <div class="hamburger">
-                        <div class="menu">
-                            <div class="menu-links">
-                                <ul>
-                                    <li><a href="#about-us">ABOUT US</a></li>
-                                    <li><a href="#our-courses">OUR COURSES</a></li>
-                                    <li><a href="#our-mentors">OUR MENTORS</a></li>
-                                    <li><a href="#reviews">REVIEWS</a></li>
-                                    <li><a href="#sign-up-in-main">CONTACTS</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="menu-camera-div">
-                            <img class="menu-camera-div-image" srcset="/team2/assets/menu-camera@x2-CZsBW2Do.png"
-                                src="/team2/assets/menu-camera-0qjW01Pa.png" alt="menu_camera" width="476" height="480" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <section class="hero-section">
-            <div class="hero-div">
-                <div>
-                    <h1 class="hero-main-title-h1">
-                        Discover the magic of
-                        <span class="hero-main-title-span">photography</span> in our
-                        school
-                    </h1>
-                    <h5 class="hero-paragraph">
-                        Our photography school offers an unforgettable journey, where you
-                        can learn the basics of composition, master technical skills,
-                        translate your unique ideas.
-                    </h5>
+    <!-- <img
+      class="menu-wrap-img"
+      src="./images/x.png"
+      alt="menu-wrap-close-img"
+      width="32"
+      height="32"
+    /> -->
 
-                    <div class="hero-reviews-container">
-                        <div class="hero-students-link-container">
-                            <div class="hero-students-div">
-                                <img srcset="/team2/assets/happystudents_mobile@x2-242WVCO7.png 2x"
-                                    src="/team2/assets/HappyStudents_Mobile-CFivyyGY.png" alt="happyStudent" />
-                            </div>
-                            <div class="hero-students-link">
-                                <h5 class="hero-students-text">
-                                    <a href="#reviews">Our happy students</a>
-                                </h5>
-                                <div class="image-arrow-div">
-                                    <img class="image-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB6SURBVHgBpZJBDYAwDEV/yQQgARxgAQUgAQfggKEACzjCwhwgYfweRhZu3V7ylnSHn7UrYCTGuNDhf9/ATkdvhu21QQnPsJO2Wog+FTYmOmd1oKMGRdRzOR49bGx0zepDRDyssAGdjfLQr0WHMgJ0LiIBpegOpZ/KeQEI/zTK72/cdgAAAABJRU5ErkJggg==" alt="arrow" />
-                                </div>
-
-                            </div>
-                        </div>
-
-                        <div class="hero-text-number">
-                            <svg class="hero-svg" width="44" height="44">
-                                <use href="/team2/assets/icons-CU23zrBB.svg#icon-hero-star"></use>
-                            </svg>
-                            <div class="hero-h6-h4-container">
-                                <h6 class="hero-text">Reviews</h6>
-                                <h4 class="hero-number">+1500</h4>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="hero-photographer">
-                    <img srcset="/team2/assets/Photographer_Mobile@x2-C2r-NK8X.png 2x" src="/team2/assets/Photographer_Mobile-Bkh6gU7M.png"
-                        alt="photographer" />
-                </div>
-            </div>
-</section>
-
-
-
-
+    <!-- <img
+      class="menu-camera-div-image"
+      srcset="./images/menu-camera@x2.png"
+      src="./images/menu-camera.png"
+      alt="menu_camera"
+      width="476"
+      height="480"
+    /> -->
+  </div>
+</header>
 
     <main>
+        <section class="hero-section">
+  <div class="hero-div">
+    <div>
+      <h1 class="hero-main-title-h1">
+        Discover the magic of
+        <span class="hero-main-title-span">photography</span> in our school
+      </h1>
+      <h5 class="hero-paragraph">
+        Our photography school offers an unforgettable journey, where you can
+        learn the basics of composition, master technical skills, translate your
+        unique ideas.
+      </h5>
+
+      <div class="hero-reviews-container">
+        <div class="hero-students-link-container">
+          <div class="hero-students-div">
+            <img
+              srcset="/team2/assets/happystudents_mobile@x2-242WVCO7.png 2x"
+              src="/team2/assets/HappyStudents_Mobile-CFivyyGY.png"
+              alt="happyStudent"
+            />
+          </div>
+          <div class="hero-students-link">
+            <h5 class="hero-students-text">
+              <a href="#reviews">Our happy students</a>
+            </h5>
+            <div class="image-arrow-div">
+              <img class="image-arrow" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAAJCAYAAAA/33wPAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB6SURBVHgBpZJBDYAwDEV/yQQgARxgAQUgAQfggKEACzjCwhwgYfweRhZu3V7ylnSHn7UrYCTGuNDhf9/ATkdvhu21QQnPsJO2Wog+FTYmOmd1oKMGRdRzOR49bGx0zepDRDyssAGdjfLQr0WHMgJ0LiIBpegOpZ/KeQEI/zTK72/cdgAAAABJRU5ErkJggg==" alt="arrow" />
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-text-number">
+          <svg class="hero-svg" width="44" height="44">
+            <use href="/team2/assets/icons-CU23zrBB.svg#icon-hero-star"></use>
+          </svg>
+          <div class="hero-h6-h4-container">
+            <h6 class="hero-text">Reviews</h6>
+            <h4 class="hero-number">+1500</h4>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-photographer">
+      <img
+        srcset="/team2/assets/Photographer_Mobile@x2-C2r-NK8X.png 2x"
+        src="/team2/assets/Photographer_Mobile-Bkh6gU7M.png"
+        alt="photographer"
+      />
+    </div>
+  </div>
+</section>
         
         
         <section class="mentor-section">
@@ -204,5 +226,21 @@
     </main>
 
     
+
+    <script>
+        function showSideBar(){
+            const sidebar = document.querySelector(".sidebar")
+
+            sidebar.style.display = "flex"
+
+        }
+    </script>
+    <script>
+        function hideSideBar(){
+            const sidebar = document.querySelector(".sidebar")
+
+            sidebar.style.display = "none"
+        }
+    </script>
 </body>
 </html>
