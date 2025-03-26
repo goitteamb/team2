@@ -1,0 +1,574 @@
+:root {
+    --black: #121212;
+    --gray: #1d1d1d;
+    --brown: #bea69e;
+    --white: #ffffff;
+}
+
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    cursor: pointer;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+body {
+    background-color: var(--black);
+}
+
+.header-hero {
+    width: 100%;
+    background-image: url(./images/dashed-bg.png);
+    color: white;
+    padding-top: 20px;
+}
+
+.header-container {
+    position: relative;
+}
+
+.nav-ul,
+.header-sign-up-button {
+    display: none;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 9px 20px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    background-color: var(--black);
+}
+
+.nav-logo-icon {
+    width: 127px;
+    height: 20px;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-cam-icon:hover {
+    --color3: var(--brown)
+}
+
+.nav-icons-div {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.header-section {
+    width: 335px;
+    margin: auto;
+}
+
+/* hamburger menu */
+.menu-wrap {
+    width: 218px;
+    height: 812px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    background-color: var(--brown);
+    z-index: 42;
+    display: none;
+}
+
+.hamburger-checkbox {
+    display: none;
+}
+
+body:has(.hamburger-checkbox:checked) .menu-wrap {
+    display: block;
+}
+
+.menu-wrap-img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+.menu-links {
+    margin-top: 180px;
+}
+
+.menu-links li {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    color: var(--black);
+    column-gap: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 14px;
+    line-height: 18.23px;
+    font-weight: 400;
+}
+
+.menu-camera-div {
+    display: flex;
+    align-items: end;
+    margin-top: 133px;
+}
+
+/* Header Bitimi */
+
+/* Hero */
+.hero-section {
+    width: 335px;
+    margin: auto;
+    background-color: var(--gray);
+    border-radius: 30px;
+    padding-top: 40px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+
+}
+
+.hero-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.hero-main-title-h1 {
+    font-family: DM Sans;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 44px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: var(--white);
+    padding-bottom: 20px;
+}
+
+.hero-main-title-span {
+    font-family: DM Sans;
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: var(--brown);
+}
+
+.hero-paragraph {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: var(--white);
+    padding-bottom: 30px;
+}
+
+.hero-reviews-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.hero-text-number {
+    display: flex;
+}
+
+.hero-h6-h4-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+
+.hero-students-link-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-students-link {
+    display: flex;
+    width: 89px;
+}
+
+.hero-link-text {
+    display: flex;
+    width: 70px;
+    height: 36px;
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.06em;
+    text-align: left;
+    color: var(--white);
+}
+
+.hero-text {
+    opacity: 0.5;
+}
+
+.hero-text,
+.hero-number {
+    font-family: DM Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: var(--white);
+}
+
+.image-arrow-div {
+    display: flex;
+    align-items: center;
+}
+
+.image-arrow {
+    display: flex;
+    width: 18px;
+    align-items: center;
+}
+
+.hero-photographer {
+    margin-left: 15px;
+}
+
+/* Hero Bitimi */
+
+
+
+
+
+/* KauÃ§uk mobile */
+@media screen and (max-width: 374px) {
+
+    /* Header */
+    .header-section {
+        width: 90%;
+    }
+
+    /* Header Bitimi */
+
+    /* Hero */
+    .hero-section {
+        width: 90%;
+    }
+
+    /* Hero Bitimi */
+
+}
+
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+
+    /* Header */
+    .header-section {
+        width: 704px;
+    }
+
+    .header-nav {
+        height: 60px;
+    }
+
+    .menu-wrap {
+        width: 480px;
+        height: 1024px;
+    }
+
+    .menu-camera-div {
+        margin-top: 0px;
+    }
+
+    .menu-camera-div-image {
+        src: url(./images/menu-camera-tablet.png);
+        width: 476px;
+    }
+
+    /* Header Bitimi */
+
+    /* Hero */
+    .hero-section {
+        width: 704px;
+    }
+
+    .hero-div {
+        height: 900px;
+    }
+
+    .hero-main-title-h1 {
+        width: 517px;
+        font-size: 60px;
+        line-height: 1.06;
+
+    }
+
+    .hero-main-title-h1-span {
+        font-size: 60px;
+        font-weight: 400;
+        line-height: 1.06;
+    }
+
+    .hero-paragraph {
+        width: 418px;
+    }
+
+    .hero-happy-studs-link-container {
+        flex-direction: row;
+    }
+
+    .hero-happy-reviews-container {
+        width: 390px;
+    }
+
+    .hero-happy-studs-div {
+        display: flex;
+    }
+
+    .hero-happy-studs {
+        height: 54px;
+    }
+
+    .hero-happy-studs-link {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        gap: 8px;
+        height: 56px;
+    }
+
+    .hero-happy-studs-link-text {
+        display: inline-block;
+    }
+
+    .hero-photographer {
+        margin: auto;
+        content: url(./images/Photographer_Tablet.png);
+        margin-bottom: 0px;
+    }
+
+    .nav-cam-div {
+        display: none;
+    }
+
+    .header-nav {
+        width: 504px;
+    }
+
+    .header-sign-up-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--white);
+        outline: transparent;
+        color: #121212;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        text-transform: uppercase;
+        padding: 16px 58px;
+        border: none;
+        border-radius: 12px;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-left: 14px;
+    }
+
+    .header-container {
+        display: flex;
+    }
+
+    /* Hero Bitimi */
+
+   
+}
+
+/* Desktop */
+@media screen and (min-width: 1280px) {
+
+    /* Header */
+    .header-section {
+        width: 1080px;
+    }
+
+    body:has(.hamburger-checkbox:checked) .menu-wrap {
+        display: none;
+    }
+
+    .nav-cam-div {
+        display: none;
+    }
+
+    .nav-burger-div {
+        display: none;
+    }
+
+    .nav-ul {
+        display: flex;
+        list-style: none;
+        gap: 20px;
+        margin-left: 150px;
+    }
+
+    .header-sign-up-button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--white);
+        outline: transparent;
+        color: #121212;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 28px;
+        text-transform: uppercase;
+        padding: 16px 58px;
+        border: none;
+        border-radius: 12px;
+        white-space: nowrap;
+        text-decoration: none;
+        transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        margin-left: 20px;
+    }
+
+    .header-container {
+        display: flex;
+    }
+
+    .header-nav {
+        width: 1080px;
+        justify-content: space-between;
+        height: 60px;
+    }
+
+    
+    /* Header Bitimi */
+
+    /* Hero */
+    .hero-section {
+        width: 1080px;
+    }
+
+    .hero-div {
+        flex-direction: row;
+        padding-left: 20px;
+    }
+
+    .hero-div-all-texts-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .hero-main-title-h1 {
+        width: 523px;
+        font-size: 64px;
+        line-height: 1.06;
+    }
+
+    .hero-main-title-h1-span {
+        font-size: 64px;
+        line-height: 1.06;
+    }
+
+    .hero-paragraph {
+        width: 418px;
+        margin-bottom: 110px;
+    }
+
+    .hero-happy-studs-link-container {
+        flex-direction: row;
+    }
+
+    .hero-happy-studs-div {
+        display: flex;
+    }
+
+    .hero-happy-studs {
+        height: 54px;
+    }
+
+    .hero-happy-studs-link {
+        display: flex;
+        flex-direction: column;
+        margin-left: 12px;
+        gap: 8px;
+        height: 56px;
+        font-size: 16px;
+    }
+
+    .hero-happy-studs-link-text {
+        display: inline-block;
+    }
+
+    .hero-happy-reviews-container {
+        width: 388px;
+        margin-bottom: 40px;
+    }
+
+    .hero-photographer {
+        content: url(./images/Photographer.jpg)
+    }
+
+    /* Hero Bitimi */
+
+    
+}
+
+/* Desktop - GeniÅŸ Ekran Opsiyonel */
+@media screen and (min-width: 1440px) {
+
+    /* Header */
+    .header-section {
+        width: 1240px;
+    }
+
+    /* Header Bitimi */
+
+    /* Hero */
+    .hero-section {
+        width: 1240px;
+    }
+
+    .hero-photographer {
+        margin-right: 60px;
+    }
+
+    /* Hero Bitimi */
+
+}
