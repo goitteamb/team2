@@ -188,8 +188,8 @@ body:has(.hamburger-checkbox:checked) .menu-wrap {
 }
 
 .hero-text-number {
-    display:flex
-    margin-left: 5px;
+    display: flex;
+    margin-left: 15px;
 }
 
 .hero-h6-h4-container {
