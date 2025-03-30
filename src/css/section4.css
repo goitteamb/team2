@@ -1,0 +1,123 @@
+/* Mobile-first tasarımı için temel stiller */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #000;
+	color: #fff;
+	text-align: left; /* Ana metin sol hizalı */
+	padding: 20px;
+	margin: 0;
+  }
+  
+  .reviews-container {
+	/* Reviews */
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start; /* Başlık ve içerik sola yaslandı */
+	padding: 0;
+	gap: 20px;
+	width: 100%;
+	max-width: 1240px; /* Kartlarla aynı genişlikte olacak */
+	margin: 0 auto; /* Ortalanacak */
+  }
+  
+  .title {
+	font-family: 'DM Sans';
+	font-weight: 500;
+	font-size: 24px;
+	line-height: 30px;
+	letter-spacing: -0.04em;
+	color: #FFFFFF;
+	margin-bottom: 20px;
+	text-align: left; /* Başlık sola yaslandı */
+	margin-left: 0; /* Başlık sayfanın solundan başlasın */
+  }
+  
+  .card {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+	width: 100%;
+	max-width: 1240px; /* Kartlar genişliği ile aynı olacak */
+	margin: 0 auto;
+  }
+  
+  /* Review card stil */
+  .review-card {
+	background-color: #222;
+	padding: 20px;
+	border-radius: 10px;
+	width: 100%;
+	text-align: left;
+	border: 1px solid #666;
+  }
+  
+  .review-header {
+	display: flex;
+	align-items: center;
+	gap: 15px;
+	margin-bottom: 10px;
+  }
+  
+  .review-header img {
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	border: 2px solid #fff;
+  }
+  
+  .review-header h2 {
+	font-size: 18px;
+	margin: 0;
+  }
+  
+  .review-header p {
+	font-size: 14px;
+	margin: 0;
+	color: #bbb;
+  }
+  
+  .review-text {
+	font-size: 16px;
+	margin: 10px 0;
+	color: #ddd;
+  }
+  
+  .stars {
+	font-size: 20px;
+	color: #e0a96d;
+  }
+  
+  /* Tablet ekranları için responsive */
+  @media (min-width: 768px) {
+	.title {
+	  font-size: 32px;
+	}
+  
+	.card {
+	  flex-direction: row;
+	  flex-wrap: wrap;
+	  gap: 30px;
+	  max-width: none;
+	}
+  
+	.review-card {
+	  width: 45%; /* İki kart yatay yerleştirilecek */
+	}
+  }
+  
+  /* Laptop ve daha büyük ekranlar için responsive */
+  @media (min-width: 1024px) {
+	.title {
+	  font-size: 40px;
+	}
+  
+	.card {
+	  max-width: 1000px;
+	  margin: 0 auto;
+	}
+  
+	.review-card {
+	  width: 30%; /* Üç kart yatay yerleştirilecek */
+	}
+  }
+  
