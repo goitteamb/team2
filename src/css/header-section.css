@@ -17,7 +17,7 @@ body {
     background-color: var(--black);
 }
 .header-container{
-    max-width: 320px;
+    max-width: 375px;
     display: flex;
     align-items: center;
 }
@@ -42,12 +42,7 @@ body {
     flex-direction: column;
     justify-content: space-around;
 }
-.header-hero {
-    width: 100%;
-    background-image: url(./images/dashed-bg.png);
-    color: white;
-    padding-top: 20px;
-}
+
 .nav-ul{
     display: flex;
     list-style: none;
@@ -182,8 +177,8 @@ body:has(.hamburger-checkbox:checked) .menu-wrap {
 /* Header Bitimi */
 
 /* Hero */
-.hero-section {
-    max-width: 1240px;
+.hero-section{
+    max-width: 375px;
     margin: auto;
     background-color: var(--gray);
     border-radius: 30px;
@@ -307,9 +302,14 @@ body:has(.hamburger-checkbox:checked) .menu-wrap {
 .nav-cam-icon{
     display: block;
 }
-
+.hero-div .read{
+    width: 100%;
+}
 /* Tablet */
 @media screen and (min-width: 768px){
+    .hero-section{
+        max-width: 768px;
+    }
     .header-sign-up-button{
         display: inline-block;
     }
@@ -336,7 +336,10 @@ body:has(.hamburger-checkbox:checked) .menu-wrap {
     }
 }
 
-@media screen and (min-width: 1158px) {
+@media screen and (min-width: 1280px) {
+    .hero-section{
+        max-width: 1240px;
+    }
     .hideOnMobile{
         display: block;
     }

@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    max-width: 320px;
+    max-width: 375px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -12,8 +12,12 @@ body{
     background-color: rgb(18,18,18);
     font-family: 'DM Sans';
 }
+.mentor-section{
+    margin-top: 80px;
+}
 .mentor-section h2{
     font-size: 48px;
+    color: white;
     margin-bottom: 50px;
 }
 .mentor-section .mentors{
