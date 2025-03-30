@@ -1,14 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
 
 .advertisement{
     width: 100%;
     background-color: black;
     border-top: 1px solid #FFFFFF33;
     border-bottom: 1px solid #FFFFFF33;
+    margin: 80px 0px;
 }
 
 .advertisement .advertisement-paragh{
@@ -22,9 +18,9 @@
 
 .advertisement .advertisement-paragh .master-skills{
     font-weight: 400;
-    font-size: 59px;
-    line-height: 64px;
-    letter-spacing: -2%;
+    font-size: 28px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
     text-transform: uppercase;
     color: #BEA69E;
     padding-top: 24px;
@@ -49,14 +45,17 @@
     }
 }
 
+
 .about_us .about_us_container{
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    width: calc(704px + (1240 - 704) * (100vw - 768px) / (1440 - 768));
     margin: 100px;
     gap: 50px;
+    max-width: 375px;
+    width: 100%;
+    margin: 0 auto;
     background-color: #121212;
+    padding: 0px 15px;
 }
 
 .about_us .about_us_container .about{
@@ -79,15 +78,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
     gap: 50px
 }
 
 .about_us .about_us_container .about_us_detail .camera_rectangle{
     border-radius: 1000px;
+    width: 100%;
 }
 
 .about_us .about_us_container .about_us_detail .about_us_paragh{
     display: flex;
+    flex-direction: column;
     gap: 40px;
 }
 
@@ -99,81 +101,40 @@
     font-size: 16px;
     line-height: 20px;
     letter-spacing: -0.02em;
+    width: 100%;
 }
 
-.need_fix_width{
-    max-width: 314px;
-}
 
-@media screen and (max-width:768px){
-    .advertisement .advertisement-paragh{
-        padding: 0;
+@media screen and (min-width:768px) {
+    .about_us .about_us_container .about_us_detail .about_us_paragh{
+        flex-direction: row;
     }
-
+    .about_us .about_us_container .about_us_detail .camera_rectangle{
+        width: 100%;
+    }
+    .about_us .about_us_container{
+        max-width: 768px;
+    }
     .advertisement .advertisement-paragh .master-skills{
         font-size: 40px;
         line-height: 50px;
-    }
-
-    .advertisement .advertisement-paragh{
-        padding-left: 0;
-        gap: 10%;
-    }
-
-    .about_us .about_us_container{
-        margin-left: 32px;
-        width:auto;
-    }
-
-    .about_us .about_us_container .about_us_detail{
-        display: flex;
-        flex-direction: column;
-        justify-content: left;
-        align-items: flex-start;
-        max-width: 704px;
-    }
-
-    .about_us .about_us_container .about_us_detail .camera_rectangle{
-        width: 100%;
-        height: auto;
-    }
-
-    .about_us .about_us_container .about_us_detail .about_us_paragh .photography_indiction{
-        max-width: 280px;
-    }
-
-}
-
-@media screen and (max-width:376px){
-    .advertisement .advertisement-paragh .master-skills{
-        font-size: 28px;
-        line-height: 32px;
-        padding-top: 20px;
-        padding-bottom: 20px;
-    }
-
-    .about_us .about_us_container{
-        width: 335px;
-        margin-left: 20px;
-    }
-
-    .about_us .about_us_container .about{
-        font-size: 28px;
-        line-height: 32px;
-        max-width: 345px;
-    }
-
-    .about_us .about_us_container .about_us_detail .camera_rectangle{
-        width: 335px;
-        height: 209px;
-    }
-
-    .about_us .about_us_container .about_us_detail{
-        max-width: 335px;
-    }
-
-    .about_us .about_us_container .about_us_detail .about_us_paragh{
-        width: 335px;
-        flex-direction: column;
+        padding-right: 10px;
     }
 }
+
+
+@media screen and (min-width:1280px) {
+    .about_us .about_us_container .about_us_detail{
+        flex-direction: row;
+    }
+   .about_us .about_us_container{
+        max-width: 1240px;
+   }
+   .advertisement .advertisement-paragh .master-skills{
+        font-size: 59px;
+        line-height: 64px;
+        
+   }
+}
+
+
