@@ -262,7 +262,6 @@ body:has(.hamburger-checkbox:checked) .menu-wrap {
     display: flex;
     width: 70px;
     height: 36px;
-    font-family: DM Sans;
     font-size: 14px;
     font-weight: 400;
     line-height: 18px;

@@ -24,7 +24,7 @@
   	list-style: none;
 }
   
-.card {
+.menu-card {
 	background-color: #222;
 	padding: 20px;
 	border-radius: 10px;
@@ -34,7 +34,7 @@
   
   /* Review card stil */
   
-.card-info{
+.card-menu-info{
 	display: flex;
 	gap: 20px;
 }
@@ -48,15 +48,15 @@
 	display: flex;
 	justify-content: space-between;
 }
-.card .card-layout .card-info img {
+.menu-card .card-layout .card-menu-info img {
 	border-radius: 50%;
 }
-.card .card-layout .card-info h3{
+.menu-card .card-layout .card-menu-info h3{
 	font-size: 20px;
 	line-height: 1.75rem;
 	color: white;
 }
-.card .card-layout .card-info p{
+.menu-card .card-layout .card-menu-info p{
 	font-size: 14px;
 	line-height: 1.125rem;
 	letter-spacing: -0.02em;
