@@ -301,7 +301,8 @@ body:has(.hamburger-checkbox:checked) .menu-wrap {
     display: block;
 }
 .hero-div .read{
-    width: 100%;
+    width: 259px;
+    height: 314px;
 }
 /* Tablet */
 @media screen and (min-width: 768px){
@@ -332,6 +333,10 @@ body:has(.hamburger-checkbox:checked) .menu-wrap {
     .hero-main-title-h1{
         width: 75%;
     }
+    .hero-div .read{
+        width: 393px;
+        height: 434px;
+    }
 }
 
 @media screen and (min-width: 1280px) {
@@ -353,5 +358,9 @@ body:has(.hamburger-checkbox:checked) .menu-wrap {
     }
     .hero-div{
         flex-direction: row;
+    }
+    .hero-div .read{
+        width: 397px;
+        height: 520px;
     }
 }
