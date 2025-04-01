@@ -4,6 +4,11 @@
     --brown: #bea69e;
     --white: #ffffff;
 }
+.izgara,
+header {
+    background-image: url(../images/dashed-bg.png);
+    background-size: contain;
+}
 button {
     cursor: pointer;
 }
